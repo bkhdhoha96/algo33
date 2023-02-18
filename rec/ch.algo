@@ -1,0 +1,13 @@
+ALGORITHM word palindrome
+VAR
+    S: ARRAY_OF string;
+    n,i; INTEGER;
+    n:=length(S[i]);
+    
+BEGIN
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        IF (S[i]=S[n-1-i]) THEN
+            write ("the word is palindrome")
+        END_IF
+    END_FOR
+END
